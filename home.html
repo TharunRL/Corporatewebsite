@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home.css">
+    <title>Orange & co</title>
+</head>
+<body>
+    <div class="container"><div class="imgdiv"><img src="orange.png" alt="orange" id="orangeimg"></div>
+    <div animate class="orangetext">range & co</div></div>
+    <script src="js/gsap.min.js"></script>
+    <script>
+        let tl = gsap.timeline();
+        tl.fromTo("#orangeimg", 
+            { y: -window.innerHeight },
+            { 
+                y: window.innerHeight /1.6,  
+                duration: 1,
+                ease: "power2.in" 
+            }
+        )
+        .to("#orangeimg", 
+            { 
+                y: window.innerHeight -700, 
+                rotation: 360, 
+                duration: 0.65,
+                ease:"power.in"
+            })
+        .fromTo("#orangeimg", 
+            {y: window.innerHeight -700},
+            { 
+                y: window.innerHeight /4, 
+                duration: 0.5,
+                ease:"power2.in"
+            });
+        const img = document.getElementById('orangeimg');
+        img.addEventListener('mouseenter', () => {
+            let tli = gsap.timeline();
+            tli.to(img,
+                { 
+                    y: -10, 
+                    rotation: 360, 
+                    duration: 0.8,
+                    ease: 'back.out(1.7)'
+                }
+            )
+            .to(img,
+            {
+                y:window.innerHeight /4, 
+                duration: 0.5,
+                ease:"power2.in"
+            });
+        });
+    </script>
+</body>
+</html>
