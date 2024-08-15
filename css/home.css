@@ -1,5 +1,7 @@
 body{
-    background-color: #F8EDED;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
 }
 .container{
     display: flex;
@@ -16,3 +18,33 @@ body{
 [animate]{
     font-size: 100px;
 }
+@-webkit-keyframes svg-text-anim {
+    40% {
+       stroke-dashoffset: 0;
+       fill: transparent;
+     }
+     60% {
+       stroke-dashoffset: 0;
+       fill: #000000;
+     }
+     100% {
+       stroke-dashoffset: 0;
+       fill: #000000;
+     }
+     
+ }
+ @keyframes svg-text-anim {
+    40% {
+       stroke-dashoffset: 0;
+       fill: transparent;
+     }
+     60% {
+       stroke-dashoffset: 0;
+       fill: #000000;
+     }
+     100% {
+       stroke-dashoffset: 0;
+       fill: #000000;
+     }
+     
+ }
