@@ -3,13 +3,18 @@ body{
     background-size: cover;
     overflow: hidden;
 }
-.container{
+.logo{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 100;
 }
-.orangetext{
+.home{
     height:100vh;
+}
+
+.orangetext{
+    height:200px;
     text-align: left;
     padding-top: 300px;
     padding-left: 0;
@@ -17,6 +22,41 @@ body{
 }
 [animate]{
     font-size: 100px;
+}
+.scroll-down{
+    padding-top: 150px;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.scroll-down .arrow {
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    transform: rotate(45deg);
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0) rotate(45deg);
+    }
+    40% {
+        transform: translateY(-10px) rotate(45deg);
+    }
+    60% {
+        transform: translateY(-5px) rotate(45deg);
+    }
+}
+
+.scroll-down .arrow {
+    animation: bounce 2s infinite;
 }
 @-webkit-keyframes svg-text-anim {
     40% {
