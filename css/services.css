@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#FABC3F;
+    background-position: center;
+    color: #821131;
+}
+
+h1,
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h1 {
+    position: relative;
+    padding-top: 50px;
+    max-width: max-content;
+    margin: 2rem auto 2rem auto;
+    
+}
+h3{
+    padding-top: 10px;
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 5px;
+    background-color: #FF4742;
+    bottom: -2rem;
+    left: 25px;
+}
+
+i {
+    font-size: 3rem;
+    color: #E85C0D;
+    padding: 1rem;
+    transition: all 0.3s linear;
+    transform: rotate(-45deg);
+}
+
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.service-card {
+    cursor: pointer;
+    width: 300px;
+    margin: 20px;
+    padding: 2rem 20px 20px 20px;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.icon-container {
+    border: 2px solid #E85C0D;
+    transition: 0.3s linear;
+    width: max-content;
+    margin: 0 auto;
+    transform: rotate(45deg);
+    
+}
+
+.service-card:hover {
+    transform: scale(1.1);
+}
+
+.service-card a {
+    color: #C7253E;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .service-card {
+        width: 100%;
+    }
+}
+
+.dynamic-island {
+    position: fixed;
+    top: 20px; /* Distance from the top of the viewport */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color:#FF4742 ;
+    padding: 10px 20px;
+    border-radius: 50px; /* Rounded corners to mimic Dynamic Island */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.dynamic-island ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Space between items */
+}
+
+.dynamic-island ul li {
+    display: inline;
+}
+
+.dynamic-island ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight:bolder;
+    font-size: larger;
+    padding: 8px 16px;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+}
+
+.dynamic-island ul li a:hover {
+    background-color: #fd635d; /* Darken background on hover */
+}
+
+/* For responsive design (optional) */
+@media (max-width: 494px) {
+    .dynamic-island ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .dynamic-island {
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+}

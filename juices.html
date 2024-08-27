@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orange & Co. Juice Carousel</title>
+    <link rel="stylesheet" href="css/juices.css">
+</head>
+<body>
+    <header>
+        <nav class="dynamic-island">
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./team.html">Team</a></li>
+                <li><a href="#home">Contact</a></li>
+            </ul>
+        </nav></header>
+    <div class="carousel-container">
+        <div class="carousel">
+            <ul class="list">
+              <li class="item"><div class="content"><img src="static/orangejuice.webp" alt="Orange Juice"></div></li>
+              <li class="item"><div class="content"><img src="static/applejuice.webp" alt="Apple Juice"></div></li>
+              <li class="item"><div class="content"><img src="static/grapejuice.webp" alt="Grape Juice"></div></li>
+              <li class="item"><div class="content"><img src="static/watermelonjuice.webp" alt="Watermelon Juice"></div></li>
+              <li class="item"><div class="content"><img src="static/orangejuice.webp" alt="Orange Juice"></div></li>
+            </ul>
+            <button onclick="handleClick('previous')" class="button button--previous" type="button">⟨</button>
+            <button onclick="handleClick('next')" class="button button--next" type="button">⟩</button>
+        </div>
+        <div class="dots">
+        </div>
+    </div>
+    <script src="js/juices.js">
+    </script>
+</body>
+</html>

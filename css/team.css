@@ -1,0 +1,182 @@
+* {
+    font-family: Nunito, sans-serif;
+  }
+  body{
+    background-color: #F3FEB8;
+  }
+  .text-blk {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    line-height: 25px;
+  }
+  
+  .responsive-cell-block {
+    min-height: 75px;
+  }
+  
+  .responsive-container-block {
+    min-height: 75px;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    justify-content: space-evenly;
+  }
+  
+  .outer-container {
+    padding-top: 30px;
+
+    padding-bottom: 10px;
+
+    background-color: #FFDE4D;
+    min-height: 95vh;
+    border-radius: 25px;
+  }
+  
+  .inner-container {
+    max-width: 1320px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
+  }
+  
+  .section-head-text {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 48px;
+    color: rgb(0, 135, 177);
+    margin: 0 0 10px 0;
+  }
+  
+  .section-subhead-text {
+    font-size: 25px;
+    color: rgb(153, 153, 153);
+    line-height: 35px;
+    max-width: 470px;
+    text-align: center;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 60px;
+    margin-left: 0px;
+  }
+  
+  .img-wrapper {
+    width: 100%;
+  }
+  
+  .team-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .social-media-links {
+    width: 125px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .name {
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(102, 102, 102);
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+  }
+  
+  .position {
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(0, 135, 177);
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 50px;
+    margin-left: 0px;
+  }
+  
+  .team-img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .team-card-container {
+    width: 280px;
+    margin: 0 0 40px 0;
+  }
+  
+  @media (max-width: 500px) {
+    .outer-container {
+      padding: 10px 20px 10px 20px;
+    }
+  
+    .section-head-text {
+      text-align: center;
+    }
+  }
+
+  .dynamic-island {
+    position: fixed;
+    top: 20px; /* Distance from the top of the viewport */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color:#FF4742 ;
+    padding: 10px 20px;
+    border-radius: 50px; /* Rounded corners to mimic Dynamic Island */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.dynamic-island ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Space between items */
+}
+
+.dynamic-island ul li {
+    display: inline;
+}
+
+.dynamic-island ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight:bolder;
+    font-size: larger;
+    padding: 8px 16px;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+}
+
+.dynamic-island ul li a:hover {
+  background-color: #fd635d; /* Darken background on hover */
+}
+
+/* For responsive design (optional) */
+@media (max-width: 494px) {
+    .dynamic-island ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .dynamic-island {
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+}
